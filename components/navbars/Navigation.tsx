@@ -1,3 +1,4 @@
+import { useTheme } from "@/components/theme-provider";
 import { Plane, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -23,6 +24,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
+  const { theme } = useTheme(); // Ensure re-render on theme change
 
   const isActiveRoute = (path: string) => {
     return pathname === path;
@@ -45,42 +47,31 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
             ? 'translate-x-0 shadow-2xl' 
             : '-translate-x-full'
         }`}
-        style={{ backgroundColor: "#232323" }}
+        style={{
+          backgroundColor: theme === "dark" ? "#18181b" : "#FFFFFF",
+        }}
       >
         {/* Header */}
-        <div className="p-6 border-b relative" style={{ borderColor: "#c6a35d33" }}>
+        <div className="p-6 border-b border-amara-gold/20 dark:border-amara-gold/30 relative">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110"
-                style={{ backgroundColor: "#c6a35d" }}
-              >
-                <Plane className="w-6 h-6" style={{ color: "#232323" }} />
+            <div className="flex items-center"> {/* Removed space-x-3 */}
+              <div className="w-10 h-10 bg-amara-gold rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                <Plane className="w-6 h-6 text-amara-dark" />
               </div>
               <div>
-                <h1
-                  className="font-bodoni text-xl font-bold"
-                  style={{ color: "#f0efe2" }}
-                >
+                <h1 className="font-bodoni text-xl font-bold text-amara-light dark:text-gray-100">
                   Amara Aviation
                 </h1>
-                <p
-                  className="font-montserrat text-xs"
-                  style={{ color: "#f0efe2b3" }}
-                >
+                <p className="font-montserrat text-xs text-amara-light/70 dark:text-gray-400">
                   Excellence in Aviation
                 </p>
               </div>
             </div>
             <button
               onClick={onClose}
-              className="p-2 rounded-lg transition-all duration-300 group"
-              style={{ backgroundColor: "transparent" }}
+              className="p-2 rounded-lg hover:bg-amara-gold/10 transition-all duration-300 group"
             >
-              <X
-                className="w-5 h-5 transition-colors"
-                style={{ color: "#f0efe2" }}
-              />
+              <X className="w-5 h-5 text-amara-light group-hover:text-amara-gold dark:text-gray-100 dark:group-hover:text-amara-gold transition-colors" />
             </button>
           </div>
         </div>
@@ -99,37 +90,30 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                   onClick={onClose}
                   className={`block px-4 py-3 rounded-xl font-montserrat font-medium transition-all duration-300 group relative overflow-hidden ${
                     isActiveRoute(item.path)
-                      ? 'scale-105 shadow-lg'
-                      : ''
+                      ? 'bg-amara-gold text-amara-dark shadow-lg transform scale-105'
+                      : 'text-amara-light dark:text-[#f0efe2]'
                   }`}
                   style={
-                    isActiveRoute(item.path)
-                      ? {
-                          backgroundColor: "#c6a35d",
-                          color: "#232323",
-                          boxShadow: "0 4px 16px 0 #c6a35d33",
-                        }
-                      : {
-                          color: "#f0efe2",
-                        }
+                    !isActiveRoute(item.path)
+                      ? { transition: 'all 0.3s' }
+                      : undefined
                   }
                 >
                   <span
-                    className="relative z-10 transition-all duration-300 group-hover:pl-8"
+                    className="relative z-10 transition-all duration-300 group-hover:pl-8 group-hover:text-[#c6a35d] group-hover:shadow-[0_0_0_2px_#c6a35d] group-hover:rounded"
+                    style={{
+                      transition: 'all 0.3s',
+                      boxShadow: 'none',
+                    }}
                   >
                     {item.label}
                   </span>
                   <div
-                    className={`absolute inset-0 transition-transform duration-300 ${
+                    className={`absolute inset-0 bg-gradient-to-r from-amara-gold/20 to-transparent transform transition-transform duration-300 ${
                       isActiveRoute(item.path)
                         ? 'translate-x-0'
                         : '-translate-x-full group-hover:translate-x-0'
                     }`}
-                    style={{
-                      background: isActiveRoute(item.path)
-                        ? "linear-gradient(to right, #c6a35d33 0%, transparent 100%)"
-                        : "linear-gradient(to right, #c6a35d1a 0%, transparent 100%)",
-                    }}
                   />
                 </Link>
               </li>
@@ -138,24 +122,14 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Footer */}
-        <div
-          className="absolute bottom-0 left-0 right-0 p-4 border-t"
-          style={{
-            borderColor: "#c6a35d33",
-            background: "linear-gradient(to top, #232323 80%, transparent 100%)",
-          }}
-        >
-          <p
-            className="font-montserrat text-xs text-center"
-            style={{ color: "#f0efe280" }}
-          >
+        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-amara-gold/20 dark:border-amara-gold/30 bg-gradient-to-t from-amara-dark to-transparent dark:from-gray-900">
+          <p className="font-montserrat text-xs text-amara-light/50 dark:text-gray-500 text-center">
             © 2024 Amara Aviation. All rights reserved.
           </p>
         </div>
       </nav>
     </>
-  )
+  );
 };
 
 export default Navigation;
-
