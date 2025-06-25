@@ -1,5 +1,6 @@
 import { useTheme } from "@/components/theme-provider";
-import { Plane, X } from 'lucide-react';
+import { X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -54,9 +55,17 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="p-6 border-b border-amara-gold/20 dark:border-amara-gold/30 relative">
           <div className="flex items-center justify-between">
-            <div className="flex items-center"> {/* Removed space-x-3 */}
-              <div className="w-10 h-10 bg-amara-gold rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-                <Plane className="w-6 h-6 text-amara-dark" />
+            <div className="flex items-center">
+              {/* Replace Plane icon with image */}
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden bg-amara-gold">
+                <Image
+                  src="/amaraa.png"
+                  alt="Amara Aviation"
+                  width={40}
+                  height={40}
+                  className="object-contain w-8 h-8"
+                  priority
+                />
               </div>
               <div>
                 <h1 className="font-bodoni text-xl font-bold text-amara-light dark:text-gray-100">
@@ -90,7 +99,7 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                   onClick={onClose}
                   className={`block px-4 py-3 rounded-xl font-montserrat font-medium transition-all duration-300 group relative overflow-hidden ${
                     isActiveRoute(item.path)
-                      ? 'bg-amara-gold text-amara-dark shadow-lg transform scale-105'
+                      ? 'bg-amara-gold text-amara-dark transform scale-105'
                       : 'text-amara-light dark:text-[#f0efe2]'
                   }`}
                   style={

@@ -1,9 +1,11 @@
 "use client";
 import { useTheme } from "@/components/theme-provider";
-import { ChevronDown, Plane } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { ThemeToggle } from "../theme-toggle";
 
 const topNavItems = [
 	{ label: "Home", path: "/" },
@@ -11,6 +13,7 @@ const topNavItems = [
 	{ label: "Services", path: "/services" },
 	{ label: "Divisions", path: "/divisions" },
 	{ label: "Contact Us", path: "/contact" },
+  
 ];
 
 interface TopNavbarProps {
@@ -60,14 +63,17 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ onAmaraClick, isSidebarOpen }) =>
 							}`}
 						>
 							<div
-								className={`w-8 h-8 rounded-md flex items-center justify-center transition-all duration-300 ${
+								className={`w-8 h-8 rounded-md flex items-center justify-center overflow-hidden transition-all duration-300 ${
 									isSidebarOpen ? "bg-amara-dark" : "bg-amara-gold"
 								}`}
 							>
-								<Plane
-									className={`w-5 h-5 transition-all duration-300 ${
-										isSidebarOpen ? "text-amara-gold" : "text-amara-dark"
-									}`}
+								<Image
+									src="/amaraa.png"
+									alt="Amara Aviation"
+									width={32}
+									height={32}
+									className="object-contain w-8 h-8"
+									priority
 								/>
 							</div>
 							<span className="font-bodoni text-lg font-bold">Amara Aviation</span>
@@ -95,12 +101,13 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ onAmaraClick, isSidebarOpen }) =>
 								<span
 									className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-300 ${
 										isActiveRoute(item.path)
-											? "w-full bg-[#c6a35d]"
-											: "w-0 group-hover:w-full bg-[#c6a35d]"
+											? "w-full bg-[#c6a35d] bg-amara-gold text-amara-dark shadow-lg transform scale-105"
+											: "w-0 group-hover:w-full bg-[#c6a35d] text-amara-light hover:bg-gradient-to-r hover:from-amara-gold/10 hover:to-amara-gold/5 hover:text-amara-gold hover:translate-x-2 dark:text-gray-100 dark:hover:text-amara-gold"
 									}`}
 								/>
 							</Link>
 						))}
+						<ThemeToggle />
 					</div>
 				</div>
 			</div>

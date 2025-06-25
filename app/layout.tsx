@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className={`${bodoniModa.variable} ${montserrat.variable} font-montserrat antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
-          <ThemeToggle />
+          
         </ThemeProvider>
       </body>
     </html>
