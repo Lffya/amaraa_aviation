@@ -1,43 +1,65 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Bodoni_Moda, Montserrat } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { ThemeToggle } from "@/components/theme-toggle"
+"use client";
+import Navigation from "@/components/navbars/Navigation";
+import TopNavbar from "@/components/navbars/TopNavbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import type { Metadata } from "next";
+import { Bodoni_Moda, Montserrat } from "next/font/google";
+import React from "react";
+
+import "./globals.css";
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
   variable: "--font-bodoni",
   display: "swap",
-})
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   display: "swap",
-})
+});
 
-export const metadata: Metadata = {
-  title: "Amaraa Aviation Group - Excellence in Aviation",
-  description:
-    "Premium aviation services including passenger flights, cargo operations, and charter services. Part of the Amaraa Holding network.",
-  keywords: "aviation, flights, cargo, charter, Amaraa, airline, transportation",
-    generator: 'v0.dev'
-}
+// export const metadata: Metadata = {
+//   title: "Amaraa Aviation Group - Excellence in Aviation",
+//   description:
+//     "Premium aviation services including passenger flights, cargo operations, and charter services. Part of the Amaraa Holding network.",
+//   keywords: "aviation, flights, cargo, charter, Amaraa, airline, transportation",
+//   generator: 'v0.dev'
+// };
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+
+  const handleAmaraClick = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleCloseSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${bodoniModa.variable} ${montserrat.variable} font-montserrat antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <TopNavbar 
+            onAmaraClick={handleAmaraClick} 
+            isSidebarOpen={isSidebarOpen}
+          />
+          <Navigation 
+            isOpen={isSidebarOpen} 
+            onClose={handleCloseSidebar} 
+          />
           {children}
-          
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
+
+
