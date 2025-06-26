@@ -2,7 +2,6 @@
 import Navigation from "@/components/navbars/Navigation";
 import TopNavbar from "@/components/navbars/TopNavbar";
 import { ThemeProvider } from "@/components/theme-provider";
-import type { Metadata } from "next";
 import { Bodoni_Moda, Montserrat } from "next/font/google";
 import React from "react";
 
