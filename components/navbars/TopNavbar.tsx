@@ -25,7 +25,7 @@ const navItems = [
 			{ label: "News & Media", path: "/news" },
 			{ label: "Investor Relations", path: "/investor-relations" },
 			{ label: "Career Portal", path: "/careers" },
-			{ label: "Contact Us", path: "/contact" }, // Moved here
+			{ label: "Contact Us", path: "/contact" }, 
 		],
 	},
 ];

@@ -18,17 +18,7 @@ export default function ContactPage() {
         >
           Contact Us
         </h1>
-        <p
-          className={`font-montserrat text-lg mb-8 ${
-            theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
-          }`}
-        >
-          At Amaraa Holding, we believe that every connection we make is a chapter
-          in our ongoing story—a story woven with threads of innovation,
-          sustainability, and community impact. As a bestselling author crafts a
-          narrative that captivates the heart, we invite you to be part of our
-          journey and engage with us on this exciting path.
-        </p>
+       
         {/* Contact Us Form with gold animation */}
         <div className="relative mb-12">
           {/* Gold animated background accent */}
@@ -98,23 +88,45 @@ export default function ContactPage() {
           </form>
         </div>
 
-        <h2
-          className="font-bodoni text-2xl font-semibold mb-2"
-          style={{ color: "#c6a35d" }}
-        >
-          Your Voice Matters
-        </h2>
-        <p
-          className={`font-montserrat mb-8 ${
-            theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
-          }`}
-        >
-          Whether you have a question, a suggestion, or a desire to collaborate, we
-          want to hear from you. Your insights and experiences are invaluable to us
-          as we strive to create a world where our collective efforts can thrive.
-          We are committed to building relationships that matter and creating a
-          meaningful dialogue with everyone who touches our organization.
-        </p>
+        {/* Your Voice Matters */}
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-8">
+          {/* Left: Person speaking in mic image */}
+          <div className="flex-shrink-0 flex items-center justify-center order-2 md:order-1">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-xl border-2 border-[#c6a35d]/30 bg-gradient-to-br from-[#fffbe6]/60 to-[#c6a35d]/10">
+              <img
+                src="/person-mic.jpg"
+                alt="Person speaking in mic"
+                className="object-cover w-full h-full"
+                style={{ borderRadius: "1rem" }}
+              />
+              {/* Gold overlay accent */}
+              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-[#c6a35d]/10"></span>
+              {/* Gold sparkle */}
+              <span className="absolute left-6 top-6 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
+              <span className="absolute right-6 bottom-6 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
+            </div>
+          </div>
+          {/* Right: Text content */}
+          <div className="flex-1 order-1 md:order-2">
+            <h2
+              className="font-bodoni text-2xl font-semibold mb-2"
+              style={{ color: "#c6a35d" }}
+            >
+              Your Voice Matters
+            </h2>
+            <p
+              className={`font-montserrat mb-8 ${
+                theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
+              }`}
+            >
+              Whether you have a question, a suggestion, or a desire to collaborate, we
+              want to hear from you. Your insights and experiences are invaluable to us
+              as we strive to create a world where our collective efforts can thrive.
+              We are committed to building relationships that matter and creating a
+              meaningful dialogue with everyone who touches our organization.
+            </p>
+          </div>
+        </div>
 
         {/* Get in Touch Cards */}
         <h2
@@ -270,31 +282,52 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <h2
-          className="font-bodoni text-2xl font-semibold mb-2"
-          style={{ color: "#c6a35d" }}
-        >
-          Together, We Can Make a Difference
-        </h2>
-        <p
-          className={`font-montserrat ${
-            theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
-          }`}
-        >
-          At Amaraa Holding, we are more than just a company; we are a movement
-          dedicated to creating a sustainable future. Every email, every call, and
-          every conversation is a step toward building a better tomorrow.
-        </p>
-        <p
-          className={`font-montserrat mt-4 ${
-            theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
-          }`}
-        >
-          Thank you for reaching out to us. We look forward to connecting with
-          you and continuing this remarkable journey together.
-        </p>
+        {/* Together, We Can Make a Difference */}
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-8">
+          {/* Left: Text content */}
+          <div className="flex-1">
+            <h2
+              className="font-bodoni text-2xl font-semibold mb-2"
+              style={{ color: "#c6a35d" }}
+            >
+              Together, We Can Make a Difference
+            </h2>
+            <p
+              className={`font-montserrat ${
+                theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
+              }`}
+            >
+              At Amaraa Holding, we are more than just a company; we are a movement
+              dedicated to creating a sustainable future. Every email, every call, and
+              every conversation is a step toward building a better tomorrow.
+            </p>
+            <p
+              className={`font-montserrat mt-4 ${
+                theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"
+              }`}
+            >
+              Thank you for reaching out to us. We look forward to connecting with
+              you and continuing this remarkable journey together.
+            </p>
+          </div>
+          {/* Right: Handshake image */}
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <div className="relative w-56 h-40 md:w-64 md:h-48 rounded-2xl overflow-hidden shadow-xl border-2 border-[#c6a35d]/30 bg-gradient-to-br from-[#fffbe6]/60 to-[#c6a35d]/10">
+              <img
+                src="/handshake.jpg"
+                alt="Handshake"
+                className="object-cover w-full h-full"
+                style={{ borderRadius: "1rem" }}
+              />
+              {/* Gold overlay accent */}
+              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-[#c6a35d]/10"></span>
+              {/* Gold sparkle */}
+              <span className="absolute left-6 top-6 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
+              <span className="absolute right-6 bottom-6 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
+            </div>
+          </div>
+        </div>
 
-        
         {/* Gold animation keyframes */}
         <style jsx global>{`
           @media (prefers-reduced-motion: no-preference) {
@@ -344,11 +377,9 @@ export default function ContactPage() {
               60% { transform: translateY(-8px) scale(1.08);}
               100% { transform: translateY(0);}
             }
-            /* shimmer sweep animation removed */
           }
         `}</style>
       </section>
     </main>
   );
 }
-              
