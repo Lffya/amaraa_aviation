@@ -1,8 +1,7 @@
 "use client";
-import Navigation from "@/components/navbars/Navigation";
+
 import TopNavbar from "@/components/navbars/TopNavbar";
 import { ThemeProvider } from "@/components/theme-provider";
-import type { Metadata } from "next";
 import { Bodoni_Moda, Montserrat } from "next/font/google";
 import React from "react";
 
@@ -39,9 +38,7 @@ export default function RootLayout({
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const handleCloseSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+  
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -51,10 +48,7 @@ export default function RootLayout({
             onAmaraClick={handleAmaraClick} 
             isSidebarOpen={isSidebarOpen}
           />
-          <Navigation 
-            isOpen={isSidebarOpen} 
-            onClose={handleCloseSidebar} 
-          />
+         
           {children}
         </ThemeProvider>
       </body>
