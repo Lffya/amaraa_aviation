@@ -14,7 +14,7 @@ export default function ContactPage() {
       <section className="max-w-3xl mx-auto">
         <h1
           className="font-bodoni text-3xl md:text-4xl font-bold mb-4"
-          style={{ color: "#c6a35d" }}
+          style={{ color: "primary" }}
         >
           Contact Us
         </h1>
@@ -23,64 +23,64 @@ export default function ContactPage() {
         <div className="relative mb-12">
           {/* Gold animated background accent */}
           <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-[90%] h-40 pointer-events-none z-0">
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-[#c6a35d]/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
-            <span className="absolute left-1/4 top-1/3 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
-            <span className="absolute right-1/4 top-1/4 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-primary/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
+            <span className="absolute left-1/4 top-1/3 text-2xl text-primary opacity-70 animate-gold-sparkle">✨</span>
+            <span className="absolute right-1/4 top-1/4 text-xl text-primary opacity-60 animate-gold-sparkle2">✨</span>
           </div>
           <form
-            className="relative z-10 bg-white dark:bg-[#232323] rounded-2xl shadow-xl p-8 md:p-10 max-w-xl mx-auto flex flex-col gap-6 border border-[#c6a35d]/20"
+            className="relative z-10 bg-white dark:bg-[#232323] rounded-2xl shadow-xl p-8 md:p-10 max-w-xl mx-auto flex flex-col gap-6 border border-primary/20"
             autoComplete="off"
             onSubmit={e => { e.preventDefault(); /* handle form logic here */ }}
           >
-            <h2 className="font-bodoni text-2xl font-semibold mb-2 text-center tracking-widest uppercase" style={{ color: "#c6a35d" }}>
+            <h2 className="font-bodoni text-2xl font-semibold mb-2 text-center tracking-widest uppercase" style={{ color: "primary" }}>
               Send Us a Message
             </h2>
             <div className="flex flex-col gap-2">
-              <label htmlFor="fullname" className="font-montserrat text-[#c6a35d] font-semibold">Full Name</label>
+              <label htmlFor="fullname" className="font-montserrat text-primary font-semibold">Full Name</label>
               <input
                 id="fullname"
                 name="fullname"
                 type="text"
                 required
-                className="rounded-lg border border-[#c6a35d]/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-[#c6a35d] bg-[#f0efe2] dark:bg-[#18181b] transition-all"
+                className="rounded-lg border border-primary/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-primary bg-[#f0efe2] dark:bg-[#18181b] transition-all"
                 placeholder="Enter your full name"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="mobile" className="font-montserrat text-[#c6a35d] font-semibold">Mobile Number</label>
+              <label htmlFor="mobile" className="font-montserrat text-primary font-semibold">Mobile Number</label>
               <input
                 id="mobile"
                 name="mobile"
                 type="tel"
                 required
-                className="rounded-lg border border-[#c6a35d]/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-[#c6a35d] bg-[#f0efe2] dark:bg-[#18181b] transition-all"
+                className="rounded-lg border border-primary/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-primary bg-[#f0efe2] dark:bg-[#18181b] transition-all"
                 placeholder="Enter your mobile number"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="font-montserrat text-[#c6a35d] font-semibold">Email <span className="text-xs text-[#c6a35d]/70">(optional)</span></label>
+              <label htmlFor="email" className="font-montserrat text-primary font-semibold">Email <span className="text-xs text-primary/70">(optional)</span></label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                className="rounded-lg border border-[#c6a35d]/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-[#c6a35d] bg-[#f0efe2] dark:bg-[#18181b] transition-all"
+                className="rounded-lg border border-primary/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-primary bg-[#f0efe2] dark:bg-[#18181b] transition-all"
                 placeholder="Enter your email address"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="font-montserrat text-[#c6a35d] font-semibold">Message</label>
+              <label htmlFor="message" className="font-montserrat text-primary font-semibold">Message</label>
               <textarea
                 id="message"
                 name="message"
                 required
                 rows={4}
-                className="rounded-lg border border-[#c6a35d]/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-[#c6a35d] bg-[#f0efe2] dark:bg-[#18181b] transition-all resize-none"
+                className="rounded-lg border border-primary/30 px-4 py-2 font-montserrat focus:outline-none focus:ring-2 focus:ring-primary bg-[#f0efe2] dark:bg-[#18181b] transition-all resize-none"
                 placeholder="Type your message here..."
               />
             </div>
             <button
               type="submit"
-              className="mt-2 bg-gradient-to-r from-[#c6a35d] to-[#fffbe6] text-[#232323] font-bodoni font-bold py-2 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 tracking-widest uppercase relative overflow-hidden"
+              className="mt-2 bg-gradient-to-r from-primary to-[#fffbe6] text-[#232323] font-bodoni font-bold py-2 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 tracking-widest uppercase relative overflow-hidden"
             >
               <span className="relative z-10">Send Message</span>
               <span className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-[#fffbe6]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
@@ -92,7 +92,7 @@ export default function ContactPage() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-8">
           {/* Left: Person speaking in mic image */}
           <div className="flex-shrink-0 flex items-center justify-center order-2 md:order-1">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-xl border-2 border-[#c6a35d]/30 bg-gradient-to-br from-[#fffbe6]/60 to-[#c6a35d]/10">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-xl border-2 border-primary/30 bg-gradient-to-br from-[#fffbe6]/60 to-primary/10">
               <img
                 src="/person-mic.jpg"
                 alt="Person speaking in mic"
@@ -100,17 +100,17 @@ export default function ContactPage() {
                 style={{ borderRadius: "1rem" }}
               />
               {/* Gold overlay accent */}
-              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-[#c6a35d]/10"></span>
+              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-primary/10"></span>
               {/* Gold sparkle */}
-              <span className="absolute left-6 top-6 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
-              <span className="absolute right-6 bottom-6 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
+              <span className="absolute left-6 top-6 text-2xl text-primary opacity-70 animate-gold-sparkle">✨</span>
+              <span className="absolute right-6 bottom-6 text-xl text-primary opacity-60 animate-gold-sparkle2">✨</span>
             </div>
           </div>
           {/* Right: Text content */}
           <div className="flex-1 order-1 md:order-2">
             <h2
-              className="font-bodoni text-2xl font-semibold mb-2"
-              style={{ color: "#c6a35d" }}
+              className="font-bodoni text-2xl font-semibold mb-2 text-primary"
+              
             >
               Your Voice Matters
             </h2>
@@ -131,18 +131,18 @@ export default function ContactPage() {
         {/* Get in Touch Cards */}
         <h2
           className="font-bodoni text-2xl font-semibold mb-6"
-          style={{ color: "#c6a35d" }}
+          style={{ color: "primary" }}
         >
           Get in Touch
         </h2>
         <div className="relative mb-10">
           {/* Gold animated background accent for cards */}
           <div className="absolute inset-0 pointer-events-none z-0">
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[90%] h-40 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-[#c6a35d]/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[90%] h-40 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-primary/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
             {/* Gold glittering sparkles */}
-            <span className="absolute left-1/4 top-1/3 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
-            <span className="absolute right-1/4 top-1/4 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
-            <span className="absolute left-1/3 bottom-2 text-lg text-[#c6a35d] opacity-50 animate-gold-sparkle3">✨</span>
+            <span className="absolute left-1/4 top-1/3 text-2xl text-primary opacity-70 animate-gold-sparkle">✨</span>
+            <span className="absolute right-1/4 top-1/4 text-xl text-primary opacity-60 animate-gold-sparkle2">✨</span>
+            <span className="absolute left-1/3 bottom-2 text-lg text-primary opacity-50 animate-gold-sparkle3">✨</span>
           </div>
           <div className="relative z-10 grid gap-8 md:grid-cols-2">
             {[
@@ -180,20 +180,20 @@ export default function ContactPage() {
             ].map((item, idx) => (
               <div
                 key={item.label}
-                className={`relative rounded-2xl p-7 border border-[#c6a35d]/30 bg-white/70 dark:bg-[#232323]/70 backdrop-blur-md shadow-xl group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-center overflow-hidden ${
+                className={`relative rounded-2xl p-7 border border-primary/30 bg-white/70 dark:bg-[#232323]/70 backdrop-blur-md shadow-xl group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-center overflow-hidden ${
                   item.colSpan ? "md:col-span-2" : ""
                 }`}
               >
                 {/* Glittering gold accent */}
-                <span className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-[#c6a35d]/40 to-transparent animate-gold-card-pulse blur-2xl opacity-60"></span>
+                <span className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-primary/40 to-transparent animate-gold-card-pulse blur-2xl opacity-60"></span>
                 <span className="inline-block text-4xl mb-3 animate-gold-bounce">{item.icon}</span>
-                <span className="font-bodoni font-bold text-[#c6a35d] text-lg mb-2 tracking-wide text-center">{item.label}</span>
+                <span className="font-bodoni font-bold text-primary text-lg mb-2 tracking-wide text-center">{item.label}</span>
                 <p className="font-montserrat text-sm text-center mb-2 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                   {item.desc}
                 </p>
                 <a
                   href={`mailto:${item.email}`}
-                  className="font-montserrat text-[#c6a35d] underline hover:text-[#232323] transition-colors text-center"
+                  className="font-montserrat text-primary underline hover:text-[#232323] transition-colors text-center"
                 >
                   {item.email}
                 </a>
@@ -205,14 +205,14 @@ export default function ContactPage() {
         {/* Creative Social Media Section */}
         <h2
           className="font-bodoni text-2xl font-semibold mb-4"
-          style={{ color: "#c6a35d" }}
+          style={{ color: "primary" }}
         >
           Connect with Us on Social Media
         </h2>
         <div className="relative flex flex-wrap gap-8 justify-center mb-10">
           {/* Gold animated background accent for social icons */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-40 pointer-events-none z-0">
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-[#c6a35d]/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#fffbe6]/80 via-primary/20 to-transparent blur-2xl opacity-80 animate-gold-pulse"></div>
             {/* shimmer effect removed */}
           </div>
           {[
@@ -256,23 +256,23 @@ export default function ContactPage() {
             <a
               key={item.label}
               href={item.href}
-              className={`relative group flex flex-col items-center justify-center w-32 h-32 rounded-2xl border-2 border-[#c6a35d] shadow-lg bg-white/80 dark:bg-[#232323]/80 hover:bg-[#c6a35d] transition-all duration-300 overflow-hidden z-10`}
-              style={{ boxShadow: "0 4px 32px #c6a35d22" }}
+              className={`relative group flex flex-col items-center justify-center w-32 h-32 rounded-2xl border-2 border-primary shadow-lg bg-white/80 dark:bg-[#232323]/80 hover:bg-primary transition-all duration-300 overflow-hidden z-10`}
+              style={{ boxShadow: "0 4px 32px primary22" }}
             >
               {/* Gold shimmer accent */}
-              <span className="absolute -top-4 -right-4 w-14 h-14 rounded-full bg-gradient-to-br from-[#c6a35d]/40 to-transparent animate-gold-card-pulse blur-2xl opacity-60"></span>
+              <span className="absolute -top-4 -right-4 w-14 h-14 rounded-full bg-gradient-to-br from-primary/40 to-transparent animate-gold-card-pulse blur-2xl opacity-60"></span>
               {React.cloneElement(item.icon, {
                 className: `w-8 h-8 mb-2 transition-colors ${
                   theme === "dark"
-                    ? "text-[#c6a35d] group-hover:text-[#232323]"
-                    : "text-[#c6a35d] group-hover:text-[#232323]"
+                    ? "text-primary group-hover:text-[#232323]"
+                    : "text-primary group-hover:text-[#232323]"
                 }`,
               })}
               <span
                 className={`font-montserrat font-semibold transition-colors ${
                   theme === "dark"
-                    ? "text-[#c6a35d] group-hover:text-[#232323]"
-                    : "text-[#c6a35d] group-hover:text-[#232323]"
+                    ? "text-primary group-hover:text-[#232323]"
+                    : "text-primary group-hover:text-[#232323]"
                 }`}
               >
                 {item.label}
@@ -288,7 +288,7 @@ export default function ContactPage() {
           <div className="flex-1">
             <h2
               className="font-bodoni text-2xl font-semibold mb-2"
-              style={{ color: "#c6a35d" }}
+              style={{ color: "primary" }}
             >
               Together, We Can Make a Difference
             </h2>
@@ -312,7 +312,7 @@ export default function ContactPage() {
           </div>
           {/* Right: Handshake image */}
           <div className="flex-shrink-0 flex items-center justify-center">
-            <div className="relative w-56 h-40 md:w-64 md:h-48 rounded-2xl overflow-hidden shadow-xl border-2 border-[#c6a35d]/30 bg-gradient-to-br from-[#fffbe6]/60 to-[#c6a35d]/10">
+            <div className="relative w-56 h-40 md:w-64 md:h-48 rounded-2xl overflow-hidden shadow-xl border-2 border-primary/30 bg-gradient-to-br from-[#fffbe6]/60 to-primary/10">
               <img
                 src="/handshake.jpg"
                 alt="Handshake"
@@ -320,10 +320,10 @@ export default function ContactPage() {
                 style={{ borderRadius: "1rem" }}
               />
               {/* Gold overlay accent */}
-              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-[#c6a35d]/10"></span>
+              <span className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-[#fffbe6]/10 via-transparent to-primary/10"></span>
               {/* Gold sparkle */}
-              <span className="absolute left-6 top-6 text-2xl text-[#c6a35d] opacity-70 animate-gold-sparkle">✨</span>
-              <span className="absolute right-6 bottom-6 text-xl text-[#c6a35d] opacity-60 animate-gold-sparkle2">✨</span>
+              <span className="absolute left-6 top-6 text-2xl text-primary opacity-70 animate-gold-sparkle">✨</span>
+              <span className="absolute right-6 bottom-6 text-xl text-primary opacity-60 animate-gold-sparkle2">✨</span>
             </div>
           </div>
         </div>

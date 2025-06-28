@@ -9,35 +9,35 @@ export default function AboutUsPage() {
       <section className="max-w-4xl mx-auto space-y-10">
         <h1
           className="font-bodoni text-4xl font-bold mb-6 tracking-wide uppercase transition-colors duration-700 ease-in-out animate-fade-in-up"
-          style={{ color: "#c6a35d", letterSpacing: "0.08em" }}
+          style={{ color: "primary", letterSpacing: "0.08em" }}
         >
           About Us
         </h1>
         {/* 1. Our Story */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} relative overflow-hidden rounded-2xl shadow-2xl p-0 md:p-0 transition-all duration-700 ease-in-out animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} relative overflow-hidden rounded-2xl shadow-2xl p-0 md:p-0 transition-all duration-700 ease-in-out animate-fade-in-up border border-primary/10`}
         >
           {/* Decorative background accent */}
           <div className="absolute inset-0 pointer-events-none z-0">
-            <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-br from-[#c6a35d]/10 via-transparent to-transparent blur-2xl"></div>
-            <div className="absolute right-0 bottom-0 w-1/3 h-1/2 bg-gradient-to-tr from-[#c6a35d]/20 via-transparent to-transparent blur-2xl"></div>
+            <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-br from-primary/10 via-transparent to-transparent blur-2xl"></div>
+            <div className="absolute right-0 bottom-0 w-1/3 h-1/2 bg-gradient-to-tr from-primary/20 via-transparent to-transparent blur-2xl"></div>
             <svg className="absolute left-0 bottom-0 w-40 h-40 opacity-30" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="40" fill="#c6a35d" fillOpacity="0.08" />
+              <circle cx="50" cy="50" r="40" fill="primary" fillOpacity="0.08" />
             </svg>
           </div>
           <div className="relative z-10 p-6 md:p-10 flex flex-col items-center">
-            <h2 className="font-bodoni text-2xl font-semibold mb-4 tracking-widest uppercase transition-colors duration-700 text-center" style={{ color: "#c6a35d" }}>
+            <h2 className="font-bodoni text-2xl font-semibold mb-4 tracking-widest uppercase transition-colors duration-700 text-center" style={{ color: "primary" }}>
               Our Story
             </h2>
             {/* Story timeline */}
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8">
               <div className="flex items-start gap-4 group">
                 <div className="flex flex-col items-center">
-                  <span className="w-4 h-4 rounded-full bg-[#c6a35d] shadow-lg animate-pulse"></span>
-                  <span className="w-1 h-16 bg-[#c6a35d]/30"></span>
+                  <span className="w-4 h-4 rounded-full bg-primary shadow-lg animate-pulse"></span>
+                  <span className="w-1 h-16 bg-primary/30"></span>
                 </div>
                 <div>
-                  <h3 className="font-bodoni text-lg font-bold mb-1 text-[#c6a35d]">A Dream Takes Flight</h3>
+                  <h3 className="font-bodoni text-lg font-bold mb-1 text-primary">A Dream Takes Flight</h3>
                   <p className={`font-montserrat text-base leading-relaxed ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                     Amaraa Holding began as Amaraa Airlines, founded with a vision to connect people, cultures, and opportunities across continents. Like the first page of a novel, our journey started with a single flight and a boundless sense of possibility.
                   </p>
@@ -45,11 +45,11 @@ export default function AboutUsPage() {
               </div>
               <div className="flex items-start gap-4 group">
                 <div className="flex flex-col items-center">
-                  <span className="w-4 h-4 rounded-full bg-[#c6a35d] shadow-lg animate-pulse"></span>
-                  <span className="w-1 h-16 bg-[#c6a35d]/30"></span>
+                  <span className="w-4 h-4 rounded-full bg-primary shadow-lg animate-pulse"></span>
+                  <span className="w-1 h-16 bg-primary/30"></span>
                 </div>
                 <div>
-                  <h3 className="font-bodoni text-lg font-bold mb-1 text-[#c6a35d]">Chapters of Growth</h3>
+                  <h3 className="font-bodoni text-lg font-bold mb-1 text-primary">Chapters of Growth</h3>
                   <p className={`font-montserrat text-base leading-relaxed ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                     Driven by a passion for aviation and a commitment to excellence, our story unfolded into new chapters—expanding into logistics, technology, and more. Each milestone became a plot twist, shaping Amaraa into a multi-industry conglomerate.
                   </p>
@@ -57,11 +57,11 @@ export default function AboutUsPage() {
               </div>
               <div className="flex items-start gap-4 group">
                 <div className="flex flex-col items-center">
-                  <span className="w-4 h-4 rounded-full bg-[#c6a35d] shadow-lg animate-pulse"></span>
-                  <span className="w-1 h-16 bg-[#c6a35d]/30"></span>
+                  <span className="w-4 h-4 rounded-full bg-primary shadow-lg animate-pulse"></span>
+                  <span className="w-1 h-16 bg-primary/30"></span>
                 </div>
                 <div>
-                  <h3 className="font-bodoni text-lg font-bold mb-1 text-[#c6a35d]">A Living Narrative</h3>
+                  <h3 className="font-bodoni text-lg font-bold mb-1 text-primary">A Living Narrative</h3>
                   <p className={`font-montserrat text-base leading-relaxed ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                     Our mission is to deliver innovative, purpose-driven solutions that empower communities and industries. Through strategic growth and a relentless pursuit of excellence, Amaraa Holding has become a trusted name in global business, recognized for our integrity, agility, and forward-thinking approach.
                   </p>
@@ -69,11 +69,11 @@ export default function AboutUsPage() {
               </div>
               <div className="flex items-start gap-4 group">
                 <div className="flex flex-col items-center">
-                  <span className="w-4 h-4 rounded-full bg-[#c6a35d] shadow-lg animate-pulse"></span>
-                  <span className="w-1 h-16 bg-[#c6a35d]/30"></span>
+                  <span className="w-4 h-4 rounded-full bg-primary shadow-lg animate-pulse"></span>
+                  <span className="w-1 h-16 bg-primary/30"></span>
                 </div>
                 <div>
-                  <h3 className="font-bodoni text-lg font-bold mb-1 text-[#c6a35d]">The Next Chapter</h3>
+                  <h3 className="font-bodoni text-lg font-bold mb-1 text-primary">The Next Chapter</h3>
                   <p className={`font-montserrat text-base leading-relaxed ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                     Today, we continue to expand our horizons, embracing new challenges and opportunities with a future-focused mindset. Our story is one of transformation, resilience, and a shared vision for a better tomorrow—one that we invite you to help write.
                   </p>
@@ -83,13 +83,13 @@ export default function AboutUsPage() {
           </div>
         </section>
         {/* Divider */}
-        <div className="w-full h-1 bg-gradient-to-r from-[#c6a35d] via-transparent to-[#c6a35d] rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
+        <div className="w-full h-1 bg-gradient-to-r from-primary via-transparent to-primary rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
 
         {/* 2. Key Milestones in Aviation Services */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-primary/10`}
         >
-          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700" style={{ color: "#c6a35d" }}>
+          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700 text-primary" style={{ color: "primary" }}>
             Key Milestones in Aviation Services
           </h2>
           <ul className={`list-disc pl-6 font-montserrat space-y-3 transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
@@ -103,20 +103,20 @@ export default function AboutUsPage() {
         </section>
 
         {/* Divider */}
-        <div className="w-full h-1 bg-gradient-to-r from-[#c6a35d] via-transparent to-[#c6a35d] rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
+        <div className="w-full h-1 bg-gradient-to-r from-primary via-transparent to-primary rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
 
         {/* 3. Leadership Team */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-primary/10`}
         >
-          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700" style={{ color: "#c6a35d" }}>
+          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700" style={{ color: "primary" }}>
             Leadership Team
           </h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {/* Chairperson */}
             <div className={`rounded-xl p-4 shadow group cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-start bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}>
               <span className="inline-block group-hover:rotate-6 group-hover:scale-125 transition-transform duration-300 text-3xl mb-2 animate-bounce-slow">👩‍💼</span>
-              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>Chairperson: Dr. Amina Rahman</h3>
+              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide text-primary" >Chairperson: Dr. Amina Rahman</h3>
               <p className={`font-montserrat transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Visionary founder and steward of Amaraa’s values, Dr. Rahman inspires with her commitment to ethical leadership and sustainable growth.
               </p>
@@ -124,7 +124,7 @@ export default function AboutUsPage() {
             {/* CEO */}
             <div className={`rounded-xl p-4 shadow group cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-start bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}>
               <span className="inline-block group-hover:rotate-6 group-hover:scale-125 transition-transform duration-300 text-3xl mb-2 animate-bounce-slow">🧑‍✈️</span>
-              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>CEO: Omar Al-Farsi</h3>
+              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide text-primary" >CEO: Omar Al-Farsi</h3>
               <p className={`font-montserrat transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 A dynamic strategist, Omar leads Amaraa’s global expansion, championing innovation and operational excellence across all divisions.
               </p>
@@ -132,7 +132,7 @@ export default function AboutUsPage() {
             {/* COO */}
             <div className={`rounded-xl p-4 shadow group cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-start bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}>
               <span className="inline-block group-hover:rotate-6 group-hover:scale-125 transition-transform duration-300 text-3xl mb-2 animate-bounce-slow">🤝</span>
-              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>COO: Priya Desai</h3>
+              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide text-primary">COO: Priya Desai</h3>
               <p className={`font-montserrat transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Priya ensures seamless operations and customer satisfaction, blending efficiency with a people-first approach.
               </p>
@@ -140,7 +140,7 @@ export default function AboutUsPage() {
             {/* CFO */}
             <div className={`rounded-xl p-4 shadow group cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-start bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}>
               <span className="inline-block group-hover:rotate-6 group-hover:scale-125 transition-transform duration-300 text-3xl mb-2 animate-bounce-slow">💼</span>
-              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>CFO: Michael Chen</h3>
+              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide text-primary" >CFO: Michael Chen</h3>
               <p className={`font-montserrat transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Michael drives financial sustainability and transparency, fostering trust with stakeholders and partners.
               </p>
@@ -148,7 +148,7 @@ export default function AboutUsPage() {
             {/* CTO */}
             <div className={`rounded-xl p-4 shadow group cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-start md:col-span-2 bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}>
               <span className="inline-block group-hover:rotate-6 group-hover:scale-125 transition-transform duration-300 text-3xl mb-2 animate-bounce-slow">💡</span>
-              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>CTO: Sofia Petrova</h3>
+              <h3 className="font-bodoni text-xl font-bold mb-1 tracking-wide text-primary" >CTO: Sofia Petrova</h3>
               <p className={`font-montserrat transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Sofia leads digital transformation, championing technology adoption and innovation for a smarter, greener future.
               </p>
@@ -157,16 +157,16 @@ export default function AboutUsPage() {
         </section>
 
         {/* Divider */}
-        <div className="w-full h-1 bg-gradient-to-r from-[#c6a35d] via-transparent to-[#c6a35d] rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
+        <div className="w-full h-1 bg-gradient-to-r from-primary via-transparent to-primary rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
 
         {/* 4. Core Values */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-primary/10`}
         >
-          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700" style={{ color: "#c6a35d" }}>
+          <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700" style={{ color: "primary" }}>
             Core Values
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 text-primary">
             {[
               { label: "Integrity", desc: "We act with honesty and uphold the highest ethical standards in all our endeavors.", icon: "🧭" },
               { label: "Innovation", desc: "We embrace creativity and technology to drive progress and deliver value.", icon: "🚀" },
@@ -180,7 +180,7 @@ export default function AboutUsPage() {
                 className={`rounded-xl p-4 shadow group cursor-pointer flex flex-col items-start transition-transform duration-300 hover:scale-105 hover:shadow-2xl bg-gradient-to-br ${theme === "dark" ? "from-[#18181b] to-[#232323]" : "from-[#f0efe2] to-white"}`}
               >
                 <span className="inline-block group-hover:rotate-12 group-hover:scale-125 transition-transform duration-300 text-2xl mb-2 animate-bounce-slow">{value.icon}</span>
-                <span className="font-bodoni text-lg font-bold mb-1 tracking-wide" style={{ color: "#c6a35d" }}>{value.label}</span>
+                <span className="font-bodoni text-lg font-bold mb-1 tracking-wide" style={{ color: "primary" }}>{value.label}</span>
                 <span className={`font-montserrat text-sm transition-all duration-700 ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>{value.desc}</span>
               </div>
             ))}
@@ -188,50 +188,50 @@ export default function AboutUsPage() {
         </section>
 
         {/* Divider */}
-        <div className="w-full h-1 bg-gradient-to-r from-[#c6a35d] via-transparent to-[#c6a35d] rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
+        <div className="w-full h-1 bg-gradient-to-r from-primary via-transparent to-primary rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
 
         {/* 5. Corporate Governance */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-primary/10`}
         >
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* Animated Icon/Accent */}
-            <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-[#c6a35d]/30 to-transparent shadow-lg animate-spin-slow border-2 border-[#c6a35d]/40 mb-4 md:mb-0">
+            <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-primary/30 to-transparent shadow-lg animate-spin-slow border-2 border-primary/40 mb-4 md:mb-0">
               <span className="text-5xl" role="img" aria-label="Governance">⚖️</span>
             </div>
             <div className="flex-1">
-              <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700 flex items-center gap-2" style={{ color: "#c6a35d" }}>
+              <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700 flex items-center gap-2" style={{ color: "primary" }}>
                 Corporate Governance
-                <span className="hidden md:inline-block animate-pulse text-[#c6a35d]">•</span>
+                <span className="hidden md:inline-block animate-pulse text-primary">•</span>
               </h2>
               <p className={`font-montserrat mb-4 transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Our governance structure is built on transparency, accountability, and ethical practices. The Board of Directors oversees strategic direction, risk management, and compliance, ensuring that Amaraa Holding operates with integrity and responsibility.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🔍</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Transparency</span>
+                  <span className="font-bodoni font-bold text-primary">Transparency</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Open communication and clear reporting to all stakeholders.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🗂️</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Accountability</span>
+                  <span className="font-bodoni font-bold text-primary">Accountability</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Clear roles, responsibilities, and performance metrics for leadership and teams.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🌱</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Sustainability</span>
+                  <span className="font-bodoni font-bold text-primary">Sustainability</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Integrating environmental and social considerations into decision-making.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🤝</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Stakeholder Engagement</span>
+                  <span className="font-bodoni font-bold text-primary">Stakeholder Engagement</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Active dialogue with investors, employees, partners, and communities.
                   </p>
@@ -242,50 +242,50 @@ export default function AboutUsPage() {
         </section>
 
         {/* Divider */}
-        <div className="w-full h-1 bg-gradient-to-r from-[#c6a35d] via-transparent to-[#c6a35d] rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
+        <div className="w-full h-1 bg-gradient-to-r from-primary via-transparent to-primary rounded-full my-8 animate-divider-grow motion-reduce:animate-none" />
 
         {/* 6. Sustainability & Social Responsibility */}
         <section
-          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-[#c6a35d]/10`}
+          className={`mb-10 ${theme === "dark" ? "bg-[#232323]" : "bg-white"} rounded-2xl shadow-2xl p-6 md:p-10 transition-all duration-700 animate-fade-in-up border border-primary/10`}
         >
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* Animated Icon/Accent */}
-            <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-[#c6a35d]/30 to-transparent shadow-lg animate-spin-slow border-2 border-[#c6a35d]/40 mb-4 md:mb-0">
+            <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-primary/30 to-transparent shadow-lg animate-spin-slow border-2 border-primary/40 mb-4 md:mb-0">
               <span className="text-5xl" role="img" aria-label="Sustainability">🌟</span>
             </div>
             <div className="flex-1">
-              <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700 flex items-center gap-2" style={{ color: "#c6a35d" }}>
+              <h2 className="font-bodoni text-2xl font-semibold mb-2 tracking-widest uppercase transition-colors duration-700 flex items-center gap-2" style={{ color: "primary" }}>
                 Sustainability & Social Responsibility
-                <span className="hidden md:inline-block animate-pulse text-[#c6a35d]">•</span>
+                <span className="hidden md:inline-block animate-pulse text-primary">•</span>
               </h2>
               <p className={`font-montserrat mb-4 transition-all duration-700 text-base ${theme === "dark" ? "text-[#f0efe2]" : "text-[#232323]"}`}>
                 Amaraa Holding is dedicated to environmental stewardship and social impact. We invest in green innovation, sustainable aviation practices, and community initiatives that make a real difference.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🌱</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Green Innovation</span>
+                  <span className="font-bodoni font-bold text-primary">Green Innovation</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Adoption of eco-friendly technologies and sustainable fuel alternatives.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🎓</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Education Support</span>
+                  <span className="font-bodoni font-bold text-primary">Education Support</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Scholarships, training, and mentorship for future leaders.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🚑</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">Healthcare & Disaster Relief</span>
+                  <span className="font-bodoni font-bold text-primary">Healthcare & Disaster Relief</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Providing aid and resources to communities in need.
                   </p>
                 </div>
-                <div className="rounded-xl p-4 border border-[#c6a35d]/20 bg-gradient-to-br from-[#c6a35d]/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
+                <div className="rounded-xl p-4 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow group hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-start">
                   <span className="inline-block text-2xl mb-2 group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">🤲</span>
-                  <span className="font-bodoni font-bold text-[#c6a35d]">CSR Initiatives</span>
+                  <span className="font-bodoni font-bold text-primary">CSR Initiatives</span>
                   <p className="font-montserrat text-sm mt-1 transition-colors duration-300 text-[#232323] dark:text-[#f0efe2]">
                     Ongoing projects that uplift society and protect the environment.
                   </p>
